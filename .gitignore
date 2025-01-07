@@ -1,3 +1,5 @@
 /venv/
 /.idea/
 .env
+/build/
+/ai_agent_sdk.egg-info/

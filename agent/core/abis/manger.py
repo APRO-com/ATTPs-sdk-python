@@ -109,13 +109,16 @@ AGENT_MANAGER_ABI = [
         "type": "error"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "agent",
                 "type": "address"
             },
             {
+                "indexed": True,
                 "internalType": "bytes32",
                 "name": "digest",
                 "type": "bytes32"
@@ -190,6 +193,7 @@ AGENT_MANAGER_ABI = [
                         "type": "tuple"
                     }
                 ],
+                "indexed": False,
                 "internalType": "struct Common.AgentSettings",
                 "name": "agentSettings",
                 "type": "tuple"
@@ -199,13 +203,16 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": False,
                 "internalType": "address",
                 "name": "oldProxy",
                 "type": "address"
             },
             {
+                "indexed": False,
                 "internalType": "address",
                 "name": "newProxy",
                 "type": "address"
@@ -215,8 +222,10 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "agent",
                 "type": "address"
@@ -291,6 +300,7 @@ AGENT_MANAGER_ABI = [
                         "type": "tuple"
                     }
                 ],
+                "indexed": False,
                 "internalType": "struct Common.AgentSettings",
                 "name": "agentSettings",
                 "type": "tuple"
@@ -300,8 +310,10 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "agent",
                 "type": "address"
@@ -311,8 +323,10 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "agent",
                 "type": "address"
@@ -387,6 +401,7 @@ AGENT_MANAGER_ABI = [
                         "type": "tuple"
                     }
                 ],
+                "indexed": False,
                 "internalType": "struct Common.AgentSettings",
                 "name": "agentSettings",
                 "type": "tuple"
@@ -396,13 +411,16 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "agent",
                 "type": "address"
             },
             {
+                "indexed": True,
                 "internalType": "bytes32",
                 "name": "digest",
                 "type": "bytes32"
@@ -477,6 +495,7 @@ AGENT_MANAGER_ABI = [
                         "type": "tuple"
                     }
                 ],
+                "indexed": False,
                 "internalType": "struct Common.AgentSettings",
                 "name": "agentSettings",
                 "type": "tuple"
@@ -486,13 +505,16 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "from",
                 "type": "address"
             },
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "to",
                 "type": "address"
@@ -502,13 +524,16 @@ AGENT_MANAGER_ABI = [
         "type": "event"
     },
     {
+        "anonymous": False,
         "inputs": [
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "from",
                 "type": "address"
             },
             {
+                "indexed": True,
                 "internalType": "address",
                 "name": "to",
                 "type": "address"
@@ -621,11 +646,11 @@ AGENT_MANAGER_ABI = [
             },
             {
                 "internalType": "address",
-                "name": "singer",
+                "name": "signer",
                 "type": "address"
             }
         ],
-        "name": "allowedSinger",
+        "name": "allowedSigner",
         "outputs": [
             {
                 "internalType": "bool",
@@ -1213,7 +1238,7 @@ AGENT_MANAGER_ABI = [
                 "type": "bool"
             }
         ],
-        "stateMutability": "view",
+        "stateMutability": "pure",
         "type": "function"
     },
     {

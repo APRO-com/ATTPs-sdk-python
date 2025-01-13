@@ -15,8 +15,8 @@ from eth_typing.networks import (
     URI
 )
 
-from agent.core.core import Agent
-from agent.entities import  (
+from ai_agent.core.core import Agent
+from ai_agent.entities import  (
     AgentSettings,
     AgentMessagePayload,
     AgentRegisterResults,

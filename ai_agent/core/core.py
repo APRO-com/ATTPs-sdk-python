@@ -26,11 +26,11 @@ from typing import (
     Union, Optional, Any,
 )
 
-from agent.core.abis.manger import AGENT_MANAGER_ABI
-from agent.core.abis.proxy import AGENT_PROXY_ABI
-from agent.core.abis.agent import AGENT_AGENT_ABI
+from ai_agent.core.abis.manger import AGENT_MANAGER_ABI
+from ai_agent.core.abis.proxy import AGENT_PROXY_ABI
+from ai_agent.core.abis.agent import AGENT_AGENT_ABI
 
-from agent.entities import (
+from ai_agent.entities import (
     AgentSettings,
     AgentMessagePayload,
     AgentRegisterResults,
@@ -39,7 +39,7 @@ from agent.entities import (
     Priority,
     _EIP1559GAS
 )
-from agent.utils import (
+from ai_agent.utils import (
     add_0x_prefix,
     is_valid_private_key,
     is_valid_address,

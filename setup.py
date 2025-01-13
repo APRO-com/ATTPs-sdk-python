@@ -7,7 +7,7 @@ from setuptools import (
 from pathlib import Path
 
 version = {}
-version_path = Path('agent/version.py').resolve()
+version_path = Path('ai_agent/version.py').resolve()
 with open(version_path) as f:
     exec(f.read(), version)
 
@@ -19,7 +19,7 @@ setup(
     version=version['__version__'],
     author='APRO',
     author_email='apro@apro.com',
-    description='agent: ai agent sdk for apro',
+    description='ai agent sdk for apro',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/APRO-com/ai-agent-sdk-python',

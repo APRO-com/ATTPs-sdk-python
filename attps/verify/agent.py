@@ -15,8 +15,8 @@ from eth_typing.networks import (
     URI
 )
 
-from ai_agent.core.core import Agent
-from ai_agent.entities import  (
+from attps.verify.core.core import Agent
+from attps.verify.entities import  (
     AgentSettings,
     AgentMessagePayload,
     AgentRegisterResults,

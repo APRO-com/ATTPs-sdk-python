@@ -7,7 +7,7 @@ from setuptools import (
 from pathlib import Path
 
 version = {}
-version_path = Path('ai_agent/version.py').resolve()
+version_path = Path('attps/version.py').resolve()
 with open(version_path) as f:
     exec(f.read(), version)
 
@@ -15,14 +15,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='ai-agent-sdk',
+    name='attps-sdk',
     version=version['__version__'],
     author='APRO',
     author_email='apro@apro.com',
-    description='ai agent sdk for apro',
+    description='ATTPs sdk for APRO',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/APRO-com/ai-agent-sdk-python',
+    url='https://github.com/APRO-com/ATTPs-sdk-python',
     packages=find_packages(),
     install_requires=[
         'web3 > 7.0.0',

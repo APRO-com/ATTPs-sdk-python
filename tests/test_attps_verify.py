@@ -2,14 +2,14 @@ import os
 import time
 
 from dotenv import load_dotenv
-from ai_agent.agent import AgentSDK
-from ai_agent.entities import (
+from attps.verify.agent import AgentSDK
+from attps.verify.entities import (
     AgentSettings,
     AgentHeader,
     MessageType,
     Priority, AgentMessagePayload, Proofs, AgentMetadata
 )
-from ai_agent.utils import (
+from utils.utils import (
     generate_uuid_v4,
     is_valid_uuid_v4,
     is_valid_address,
